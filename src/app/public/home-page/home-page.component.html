@@ -6,6 +6,10 @@
   <button mat-raised-button color="primary" (click)="parse(ingredientRaw)" [disabled]="isWaitingForParseResult || !ingredientRaw">Parse</button>
   <button mat-raised-button (click)="reset()" [disabled]="!ingredientRaw">Reset</button>
 </form>
+<div *ngIf="ingredientRaw">
+  <div>Using <span class="code">curl</span>:</div>
+  <pre class="code code-example">{{ ingredientRaw | curlCmd:backendBaseUrl }}</pre>
+</div>
 <div *ngIf="isWaitingForParseResult">
   <mat-spinner></mat-spinner>
 </div>

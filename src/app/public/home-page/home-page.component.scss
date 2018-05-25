@@ -29,6 +29,16 @@ span.fieldName {
   color: red;
 }
 
+.code {
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
+.code-example {
+  color: silver;
+  background: black;
+  font-family: Consolas, 'Courier New', Courier, monospace;
+}
+
 div.error {
   margin-top: 15px;
 }

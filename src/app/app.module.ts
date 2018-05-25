@@ -18,6 +18,9 @@ import { AppComponent } from './app.component';
 // Modules
 import { AppRoutingModule } from './app-routing.module';
 
+// Pipes
+import { CurlCmdPipe } from './_pipes/curl-cmd.pipe';
+
 // Services
 import { ParserService } from './_services/parser.service';
 
@@ -32,6 +35,7 @@ import { SignUpComponent } from './public/sign-up/sign-up.component';
 @NgModule({
   declarations: [
     AppComponent,
+    CurlCmdPipe,
     HomePageComponent,
     MailingListComponent,
     NavComponent,
@@ -51,7 +55,7 @@ import { SignUpComponent } from './public/sign-up/sign-up.component';
     MatProgressSpinnerModule,
     MatToolbarModule,
   ],
-  providers: [ParserService],
+  providers: [CurlCmdPipe, ParserService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

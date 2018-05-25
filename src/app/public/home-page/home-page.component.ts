@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../../environments/environment';
 
 import { IngredientParsed, ParseResult } from '../../_models/parse-result';
 import { ParserService } from '../../_services/parser.service';
@@ -14,6 +15,7 @@ export class HomePageComponent implements OnInit {
   ingredientParsed: IngredientParsed;
   error: string;
   requestsRemaining: number = null;
+  backendBaseUrl = environment.backendBaseUrl;
 
   constructor(private parserService: ParserService) { }
 
