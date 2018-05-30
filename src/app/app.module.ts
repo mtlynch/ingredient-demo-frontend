@@ -31,6 +31,7 @@ import { NavComponent } from './_components/nav/nav.component';
 // Public pages
 import { HomePageComponent } from './public/home-page/home-page.component';
 import { SignUpComponent } from './public/sign-up/sign-up.component';
+import { CodeSnippetComponent } from './_components/code-snippet/code-snippet.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { SignUpComponent } from './public/sign-up/sign-up.component';
     MailingListComponent,
     NavComponent,
     SignUpComponent,
+    CodeSnippetComponent,
   ],
   imports: [
     AppRoutingModule,

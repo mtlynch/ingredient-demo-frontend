@@ -30,6 +30,7 @@ describe('HomePageComponent', () => {
         FormsModule,
       ],
       providers: [
+        CurlCmdPipe,
         { provide: ParserService, useClass: MockParserService },
       ],
       schemas: [NO_ERRORS_SCHEMA],
