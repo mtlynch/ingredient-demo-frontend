@@ -1,3 +1,18 @@
+@import '~styles/breakpoints';
+
 .fill-remaining-space {
     flex: 1 1 auto;
+}
+
+mat-toolbar.full-size {
+  @include respond-to('small') {
+    display: none;
+  }
+}
+
+mat-toolbar.compressed {
+  display: none;
+  @include respond-to('small') {
+    display: block;
+  }
 }
