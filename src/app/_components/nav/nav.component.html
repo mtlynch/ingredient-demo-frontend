@@ -1,8 +1,22 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="full-size">
   <span><a [routerLink]="['/']">Ingredient Parser</a></span>
 
   <span class="fill-remaining-space"></span>
 
   <button mat-button [routerLink]="['/demo']">Demo</button>
+  <button mat-button [routerLink]="['/about']">About</button>
   <button mat-button color="accent" [routerLink]="['/signup']">Sign Up</button>
 </mat-toolbar>
+
+<mat-toolbar color="primary" class="compressed">
+    <span><a [routerLink]="['/']">Ingredient Parser</a></span>
+
+    <span class="fill-remaining-space"></span>
+  
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item [routerLink]="['/demo']">Demo</button>
+        <button mat-menu-item [routerLink]="['/about']">About</button>
+        <button mat-menu-item color="accent" [routerLink]="['/signup']">Sign Up</button>
+    </mat-menu>
+  </mat-toolbar>

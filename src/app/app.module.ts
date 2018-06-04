@@ -8,6 +8,7 @@ import {
   MatExpansionModule,
   MatFormFieldModule,
   MatInputModule,
+  MatMenuModule,
   MatProgressSpinnerModule,
   MatToolbarModule,
 } from '@angular/material';
@@ -32,6 +33,7 @@ import { CodeSnippetComponent } from './_components/code-snippet/code-snippet.co
 // Public pages
 import { SignUpComponent } from './public/sign-up/sign-up.component';
 import { DemoComponent } from './public/demo/demo.component';
+import { AboutComponent } from './public/about/about.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { DemoComponent } from './public/demo/demo.component';
     NavComponent,
     SignUpComponent,
     CodeSnippetComponent,
+    AboutComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -54,6 +57,7 @@ import { DemoComponent } from './public/demo/demo.component';
     MatExpansionModule,
     MatFormFieldModule,
     MatInputModule,
+    MatMenuModule,
     MatProgressSpinnerModule,
     MatToolbarModule,
   ],
