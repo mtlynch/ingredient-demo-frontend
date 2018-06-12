@@ -9,14 +9,25 @@
 </mat-toolbar>
 
 <mat-toolbar color="primary" class="compressed">
-    <span><a [routerLink]="['/']">Ingredient Parser</a></span>
+  <button mat-icon-button class="menu-button" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span><a [routerLink]="['/']">Ingredient Parser</a></span>
 
-    <span class="fill-remaining-space"></span>
-  
-    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-    <mat-menu #menu="matMenu">
-        <button mat-menu-item [routerLink]="['/demo']">Demo</button>
-        <button mat-menu-item [routerLink]="['/about']">About</button>
-        <button mat-menu-item color="accent" [routerLink]="['/signup']">Sign Up</button>
-    </mat-menu>
-  </mat-toolbar>
+  <span class="fill-remaining-space"></span>
+</mat-toolbar>
+
+<mat-sidenav-container
+  class="sidenav-container">
+  <mat-sidenav
+    #sidenav
+    mode="over"
+    fixedInViewport="true"
+    fixedTopGap="56">
+    <mat-nav-list>
+      <p class="sidenav-button"><a [routerLink]="['/demo']" (click)="sidenav.toggle()">Demo</a><br /></p>
+      <p class="sidenav-button"><a [routerLink]="['/about']" (click)="sidenav.toggle()">About</a><br /></p>
+      <p class="sidenav-button"><a [routerLink]="['/signup']" (click)="sidenav.toggle()">Sign Up</a><br /></p>
+    </mat-nav-list>
+  </mat-sidenav>
+</mat-sidenav-container>
