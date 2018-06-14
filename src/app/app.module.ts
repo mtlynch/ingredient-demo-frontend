@@ -11,7 +11,6 @@ import {
   MatInputModule,
   MatListModule,
   MatMenuModule,
-  MatPaginatorModule,
   MatProgressSpinnerModule,
   MatSidenavModule,
   MatToolbarModule,
@@ -38,6 +37,7 @@ import { CodeSnippetComponent } from './_components/code-snippet/code-snippet.co
 import { SignUpComponent } from './public/sign-up/sign-up.component';
 import { DemoComponent } from './public/demo/demo.component';
 import { AboutComponent } from './public/about/about.component';
+import { FeatureCardComponent } from './_components/feature-card/feature-card.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +49,7 @@ import { AboutComponent } from './public/about/about.component';
     SignUpComponent,
     CodeSnippetComponent,
     AboutComponent,
+    FeatureCardComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -64,7 +65,6 @@ import { AboutComponent } from './public/about/about.component';
     MatInputModule,
     MatListModule,
     MatMenuModule,
-    MatPaginatorModule,
     MatProgressSpinnerModule,
     MatSidenavModule,
     MatToolbarModule,
