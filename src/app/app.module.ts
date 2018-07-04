@@ -16,6 +16,7 @@ import {
   MatToolbarModule,
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HighlightJsModule } from 'ngx-highlight-js';
 
 import { AppComponent } from './app.component';
 
@@ -56,6 +57,7 @@ import { DocsComponent } from './public/docs/docs.component';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    HighlightJsModule,
     HttpClientModule,
     MatButtonModule,
     MatCardModule,
