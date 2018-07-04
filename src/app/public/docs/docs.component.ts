@@ -6,15 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./docs.component.scss'],
 })
 export class DocsComponent {
-  public requestExample: string = `
-{
-  "ingredients": [
-    "2 tablespoons butter",
-    "1 1/2 cups finely chopped red onions",
-    "½ tsp brown sugar"
-  ]
-}`.substring(1);
-
   public responseExample: string = `
 {
   "results": [
