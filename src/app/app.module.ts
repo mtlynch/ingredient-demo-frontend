@@ -15,6 +15,7 @@ import {
   MatSidenavModule,
   MatToolbarModule,
 } from '@angular/material';
+import { HighlightModule } from 'ngx-highlightjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
@@ -56,6 +57,7 @@ import { DocsComponent } from './public/docs/docs.component';
     BrowserAnimationsModule,
     BrowserModule,
     FormsModule,
+    HighlightModule.forRoot({ theme: 'vs2015' }),
     HttpClientModule,
     MatButtonModule,
     MatCardModule,
